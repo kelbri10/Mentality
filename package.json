@@ -1,0 +1,25 @@
+{
+  "name": "mentality",
+  "version": "1.0.0",
+  "description": "app that allows user to track moods and emotions",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelbri10/Mentality.git"
+  },
+  "author": "Kelsey Hughes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kelbri10/Mentality/issues"
+  },
+  "homepage": "https://github.com/kelbri10/Mentality#readme"
+}
