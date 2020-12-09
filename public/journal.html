@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Journal</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Journal</h1>
+        <form action = '/journal' method='POST'>
+            <label for='feeling'>How am I feeling today? (Mentally and physically)</label><br>
+            <input type='text' id='feeling' placeholder='Are you feeling happy? sad? tired?'><br><br>
+
+            <label for='why'>What's taking up most of my headspace today?</label><br>
+            <input type='text'  id='headspace' placeholder='Is there something that is worrying you?'><br><br>
+
+            <label for='grateful'>What is one thing I am grateful for today?</label><br>
+            <input type='text' id='grateful' placeholder='I am grateful for...'><br><br>
+
+            <input type='submit' value='submit'>
+        </form>
+        
+    </header>
 </body>
 </html>
