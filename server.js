@@ -8,15 +8,15 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true})); 
 app.use(express.static('public')); 
 
+//HTML routes 
 //returns index.html to client-side
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html')); 
-});
+app.use(require('./routes/html-routes')); 
 
-//returns to client-side
-app.get('/journal', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'journal.html')); 
-})
+//API routes 
+app.use(require('./routes/api-routes')); 
+
+//delete request for when user wants to delete specific journal entry 
+
 
 app.listen(PORT, () => {
     console.log(`app is listening on PORT${PORT}`); 
